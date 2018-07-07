@@ -1,37 +1,21 @@
-import java.util.ArrayList;
-
 public class Course {
-    private String name;
-    private String coursetype;
-    private ArrayList<Student> listStudent;
 
-    public Course(String cname, String ctype) {
+    private String name;
+    private String type;
+    private int grade;
+
+
+    public Course(String cname, String ctype, int cgrade) {
         name = cname;
-        coursetype = ctype;
-        listStudent = new ArrayList<>();
+        type = ctype;
+        grade = cgrade;
     }
 
 
     public String getName() {
         return name;
     }
-
-    public String setName() {
-        return null;
-    }
-
-    public String getCoursetype(){
-        return coursetype;
-    }
-    public String setCoursetype(){
-        return null;
-    }
-
-    public void addStudent(Student student) {
-        listStudent.add(student);
-    }
-
-
-
+    public String gettype() {return type;}
+    public int getgrade() {return grade;}
 
 }
